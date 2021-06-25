@@ -16,12 +16,14 @@ public class SolarBodies : MonoBehaviour
             newPlanet.AddComponent <Planet> ();
             newPlanet.GetComponent<Planet>().resolution = 2;
             newPlanet.GetComponent<Transform>().position = new Vector3(Random.Range(-50, 50), Random.Range(-50, 50), Random.Range(-50, 50));
+            int x = Random.Range(10, 100);
+            newPlanet.GetComponent<Transform>().localScale = new Vector3(x, x,x);
             newPlanet.AddComponent<Gravity>();
         }
     }
 
     // Update is called once per frame
-    void Update()
+    void Update()   
     {
         
     }
