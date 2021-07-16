@@ -26,6 +26,9 @@ public class TileGeneration : MonoBehaviour
     [SerializeField]
     private AnimationCurve heightCurve;
 
+    [SerializeField]
+    private Wave[] waves;
+
     public float mapScale;
 
     private int tileWidth;
@@ -50,7 +53,7 @@ public class TileGeneration : MonoBehaviour
         float offsetZ=-this.gameObject.transform.position.x;
         float offsetX= -this.gameObject.transform.position.z;
 
-        float[,] hmap = this.noise.GenerateNoiseMap(tileHeight,tileWidth,4,offsetX,offsetZ);
+        float[,] hmap = this.noise.GenerateNoiseMap(tileHeight,tileWidth,4,offsetX,offsetZ,waves);
 
         Texture2D finalTexture = BuildTexture(hmap);
         this.tileRender.material.mainTexture = finalTexture;
@@ -101,6 +104,8 @@ public class TileGeneration : MonoBehaviour
             for (int j =0; j<tileWidth;j++)
             {
                 Vector3 newVerticie = meshVertices[c];
+
+
                 meshVertices[c] = new Vector3(newVerticie.x, this.heightCurve.Evaluate(noiseMap[i,j]) * heightMultiplayer, newVerticie.z);
                 c++;
             }

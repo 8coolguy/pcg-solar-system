@@ -22,6 +22,7 @@ public class LevelGen : MonoBehaviour
                 //transform.position =transform.position+ new Vector3;
                 //Transform pos = transform.position + newLocation;
                 GameObject x = Instantiate(replicatedPlane, new Vector3(i * w, 0, h * j), Quaternion.identity); ;
+                x.transform.SetParent(this.gameObject.transform);
             }
         }
     }

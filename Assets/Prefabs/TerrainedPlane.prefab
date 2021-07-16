@@ -126,9 +126,6 @@ MonoBehaviour:
   - name: Ocean
     height: 0.3
     color: {r: 0, g: 0.88816905, b: 1, a: 0}
-  - name: Dessert
-    height: 0.46
-    color: {r: 0.9245283, g: 0.82285434, b: 0.13519046, a: 0}
   - name: Mountain
     height: 0.7
     color: {r: 0.3584906, g: 0.261178, b: 0, a: 0}
@@ -136,7 +133,7 @@ MonoBehaviour:
   tileFilter: {fileID: 1003436322532170012}
   tileCollider: {fileID: 1003436322532170014}
   noise: {fileID: 1003436322532170000}
-  heightMultiplayer: 5.33
+  heightMultiplayer: 2
   heightCurve:
     serializedVersion: 2
     m_Curve:
@@ -161,4 +158,8 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+  waves:
+  - seed: 234234
+    amplitude: 3
+    frequency: 1
   mapScale: 1
