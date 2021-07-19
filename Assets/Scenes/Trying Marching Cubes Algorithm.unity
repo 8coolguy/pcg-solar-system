@@ -235,10 +235,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ae68bb31d67c424482489ca60ef7d38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  height: 30
-  width: 30
-  depth: 30
-  scale: 5
+  height: 15
+  width: 15
+  depth: 15
+  scale: 3
   surfaceLevel: 0
   sphere: {fileID: 3980680189064360909, guid: 8ee62fd2249cefa49be7a9bc4ff7030e, type: 3}
   surface: {fileID: 2100000, guid: d2fa62b4dc1d1714fbb3af10f43b314f, type: 2}
