@@ -29,7 +29,7 @@ public class MainBody : MonoBehaviour
         float down =-(Input.GetAxis("Fire1")); //w,s go up and down
 
         addForce(changeView(new Vector3(horizontal,up+down,vertical),camchange));
-        
+        Debug.Log(this.gameObject.GetComponent<Rigidbody>().velocity);
     }
     private void addForce(Vector3 direction)
     {

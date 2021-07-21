@@ -389,6 +389,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   planetCount: 3
+  shape: {fileID: 11400000, guid: 5a2a75afea87d364587cb2b30169b396, type: 2}
+  colors: {fileID: 11400000, guid: 05453f6fdbbba6f4ebe79d399803ef81, type: 2}
 --- !u!4 &464066672
 Transform:
   m_ObjectHideFlags: 0
@@ -417,6 +419,7 @@ GameObject:
   - component: {fileID: 1324143128}
   - component: {fileID: 1324143127}
   - component: {fileID: 1324143132}
+  - component: {fileID: 1324143133}
   m_Layer: 0
   m_Name: Capsule
   m_TagString: Untagged
@@ -436,7 +439,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2202370f3e39ac848b11d2b72659d0d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  char_speed: 2
+  char_speed: 1
   camchange: {fileID: 98756639}
 --- !u!136 &1324143128
 CapsuleCollider:
@@ -531,3 +534,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &1324143133
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1324143126}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 042628983df58cb47ad8d826ee52719e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb: {fileID: 1324143132}
+  mass: 500
+  bigG: 1

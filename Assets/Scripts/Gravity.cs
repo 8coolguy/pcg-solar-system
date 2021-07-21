@@ -10,33 +10,39 @@ public class Gravity : MonoBehaviour
     void Start()
     {
         rb = this.GetComponent<Rigidbody>();
-        bigG =1f;
-        mass = 500;
+        bigG =.01f;
+        mass = 1000;
     }
-    void FixedUpdate()
+    void Update()
     {
         Gravity[] gravityField = FindObjectsOfType<Gravity>();
         foreach (Gravity g in gravityField)
         {
-            if (g ==this)
+            if (g.transform.position == this.gameObject.transform.position)
             {
                 continue;
             }
-            Debug.Log(g.mass);
-            Pull(g);
+            //Debug.Log(g.mass);
+            Pull(g.gameObject);
         }
     }
 
-    void Pull(Gravity otherObject)
+    void Pull(GameObject otherObject)
     {
-        Rigidbody otherRb = otherObject.rb;
-        Vector3 dir = otherRb.transform.position - this.transform.position;
-        float r = Vector3.Distance(otherRb.transform.position, this.transform.position);
-        float forceMag = (bigG * otherRb.mass * this.mass) / Mathf.Pow(r, 2);
-        Vector3 force = dir.normalized * forceMag;
-        Debug.Log(force);
-        
-        rb.AddForce(force);
-        
+        if (otherObject.transform.position !=this.transform.position)
+        {
+
+
+            
+            Vector3 dir = otherObject.transform.position - this.transform.position;
+            float r = Vector3.Distance(otherObject.transform.position, this.transform.position);
+            float forceMag = (bigG * otherObject.GetComponent<Gravity>().mass * this.mass) / Mathf.Pow(r, 2);
+            Vector3 force = dir.normalized * forceMag;
+            //Debug.Log(otherObject.transform.position+",,,,,,"+this.transform.position);
+            
+            if(force !=null)
+                rb.AddForce(force);
+            
+        }
     }   
 }

@@ -66,7 +66,7 @@ public class TileGeneration : MonoBehaviour
 
         Texture2D tex = new Texture2D(tileHeight, tileWidth);
         //color map to assign each tile 
-        Color[] cmap = new Color[tileHeight * tileWidth];
+        UnityEngine.Color[] cmap = new UnityEngine.Color[tileHeight * tileWidth];
         int c = 0;
         for(int i = 0; i < tileHeight; i++)
         {

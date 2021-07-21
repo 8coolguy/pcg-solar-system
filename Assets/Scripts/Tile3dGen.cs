@@ -56,7 +56,7 @@ public class Tile3dGen : MonoBehaviour
     Texture3D Build3dTexture(float[,,] noiseMap)
     {
         Texture3D tex = new Texture3D(tileHeight,tileWidth,tileLength,TextureFormat.RGBA32,1);
-        Color[] map = new Color[tileHeight*tileWidth*tileLength];
+        UnityEngine.Color[] map = new UnityEngine.Color[tileHeight*tileWidth*tileLength];
         int c = 0;
         for (int i=0;i<tileLength;i++)
         {
