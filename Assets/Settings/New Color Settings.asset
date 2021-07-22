@@ -13,11 +13,13 @@ MonoBehaviour:
   m_Name: New Color Settings
   m_EditorClassIdentifier: 
   enable: 1
-  colorBase: {r: 1, g: 1, b: 1, a: 0}
+  colorBase: {r: 1, g: 1, b: 1, a: 1}
   heights:
   - height: 0.4
     color: {r: 0, g: 0.06298852, b: 1, a: 0}
+  - height: 0.65
+    color: {r: 0.38679248, g: 0.34773386, b: 0.027367389, a: 0}
   - height: 0.7
     color: {r: 0.16735196, g: 1, b: 0, a: 0}
   - height: 0.87
-    color: {r: 0, g: 0, b: 0, a: 0}
+    color: {r: 1, g: 1, b: 1, a: 0}

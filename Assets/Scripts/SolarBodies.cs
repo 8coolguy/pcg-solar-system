@@ -16,32 +16,31 @@ public class SolarBodies : MonoBehaviour
             GameObject newPlanet = new GameObject();
             newPlanet.AddComponent<Rigidbody>();
             newPlanet.GetComponent<Rigidbody>().useGravity = false;
-            newPlanet.GetComponent<Rigidbody>().isKinematic = true;
-            newPlanet.AddComponent <Planet>().s =10;
-            newPlanet.GetComponent<Planet>().resolution = 8;
+            newPlanet.GetComponent<Rigidbody>().isKinematic = false;
+            newPlanet.AddComponent <Planet>().s =1;
+            newPlanet.GetComponent<Planet>().resolution = 16;
             newPlanet.GetComponent<Planet>().up =true;
             newPlanet.GetComponent<Planet>().colorSettings = colors;
             newPlanet.GetComponent<Planet>().shapeSettings = shape;
 
+            int x = Random.Range(5, 15);
+            newPlanet.transform.localScale = new Vector3(x, x, x);
 
 
 
 
-
-
-
-
-
-            newPlanet.GetComponent<Transform>().position = new Vector3(Random.Range(-50, 50), Random.Range(-50, 50), Random.Range(-50, 50));
-            int x = Random.Range(10, 100);
-            newPlanet.GetComponent<Transform>().localScale = new Vector3(x, x,x);
+            Vector3 pos =new Vector3(0,0,0);
+            while (pos.magnitude <3000) {
+                pos = new Vector3(Random.Range(-2000, 2000), Random.Range(-2000, 2000), Random.Range(-2000, 2000));
+            }
+            newPlanet.transform.position = pos;
+            
+            
             newPlanet.AddComponent<Gravity>();
+            newPlanet.GetComponent<Rigidbody>().mass = x * 50;
         }
     }
 
     // Update is called once per frame
-    void Update()   
-    {
-        
-    }
+
 }

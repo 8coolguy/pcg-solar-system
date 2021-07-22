@@ -8,7 +8,7 @@ public class Planet : MonoBehaviour
     [Range(2,256)]
     public int resolution = 4;
     Vector3[] dirs = { Vector3.up, Vector3.down, Vector3.forward, Vector3.back, Vector3.left, Vector3.right };
-    public float s = 2;
+    public float s = 1;
     
 
     public bool up;
@@ -30,6 +30,15 @@ public class Planet : MonoBehaviour
     {
         GeneratePlanet();
     }
+    public void AdjustPos(Vector3 pos)
+    {
+        foreach (Transform face in this.gameObject.GetComponentsInChildren<Transform>())
+        {
+            face.localPosition = pos;
+        }
+    }
+
+
 
     void Initialize()
     {
@@ -53,11 +62,12 @@ public class Planet : MonoBehaviour
             temp.transform.parent = this.transform;
             // i have to change scale here if I want to do that 
             CreateMesh(shapeGenerator,i, temp, resolution);
+            temp.GetComponent<MeshCollider>().convex = true;
             faces[i] = temp;
 
 
         }
-        //AdjustScale();
+        AdjustScale();
     }
     //creates pretty good faces
     //learned how to create the mesh from sebastian lague tutorial
@@ -127,9 +137,13 @@ public class Planet : MonoBehaviour
         plane.GetComponent<MeshRenderer>().material.color = colorGen.SetPlanetColor();
 
     }
-    void AdjustScale()
+    public void AdjustScale()
     {
-        this.gameObject.transform.localScale = new Vector3(s, s, s);
+        foreach(Transform face in this.gameObject.GetComponentsInChildren<Transform>())
+        {
+            face.localScale = new Vector3(s, s, s);
+        }
+        
     }
     public void GeneratePlanet()
     {
@@ -137,11 +151,12 @@ public class Planet : MonoBehaviour
         if (colorGen.Enabled())
         {
             GenerateColors();
-            AdjustScale();
+            //AdjustScale();
         }
         
 
     }
+
     public void GenerateColors()
     {
         for(int f =0;f<faces.Length; f++)
