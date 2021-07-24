@@ -19,5 +19,5 @@ MonoBehaviour:
     rough: 2
     minValue: 1
     center: {x: 0, y: 0, z: 0}
-    numLayers: 2
+    numLayers: 8
     persistance: 1

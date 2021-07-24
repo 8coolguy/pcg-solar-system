@@ -10,9 +10,12 @@ public class CameraMovement : MonoBehaviour
 
     private Camera camero;
 
-    private float distance = 25.0f;
-    private float curX = 1.0f;
-    private float curY = 1.0f;
+    public float distance = 25.0f;
+    
+    
+    
+    public float curX = 1.0f;
+    public float curY = 1.0f;
 
     private void Start()
     {
@@ -29,9 +32,11 @@ public class CameraMovement : MonoBehaviour
     {
         Vector3 dir = new Vector3(0, 0, -distance);
         Quaternion rotation = Quaternion.Euler(curY, curX, 0);
+
         camerachange.position = objecto.position + rotation * dir;
         camerachange.LookAt(objecto.position);
-        lightchange.position = objecto.position + rotation * dir;
+
+        lightchange.position = objecto.position + rotation * dir*.5f;
         lightchange.LookAt(objecto.position);
 
     }

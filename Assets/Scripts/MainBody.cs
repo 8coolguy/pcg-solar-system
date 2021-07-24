@@ -1,10 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MainBody : MonoBehaviour
 {
-    public float char_speed;
+    public float char_speed; 
 
     private Rigidbody rb;
 
@@ -29,7 +30,26 @@ public class MainBody : MonoBehaviour
         float down =-(Input.GetAxis("Fire1")); //w,s go up and down
 
         addForce(changeView(new Vector3(horizontal,up+down,vertical),camchange));
-        //Debug.Log(this.gameObject.GetComponent<Rigidbody>().velocity);
+        if (Input.GetKey(KeyCode.LeftShift))
+        {
+            rb.drag = 1;    
+        }
+        else
+        {
+            rb.drag = .05f;
+        }
+    }
+    void LateUpdate()
+    {
+        if (this.gameObject.transform.position.magnitude >7000)
+        {
+            SceneManager.LoadScene("final", LoadSceneMode.Single);
+        }
+        else if(Input.GetKey(KeyCode.Escape))
+        {
+            SceneManager.LoadScene("Main Menu", LoadSceneMode.Single);
+        }
+        
     }
     private void addForce(Vector3 direction)
     {
@@ -48,4 +68,6 @@ public class MainBody : MonoBehaviour
         }
         return movement;
     }
+    
+
 }

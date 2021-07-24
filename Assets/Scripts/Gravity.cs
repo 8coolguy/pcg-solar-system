@@ -6,11 +6,11 @@ public class Gravity : MonoBehaviour
 {
     public Rigidbody rb;
 
-    public float bigG;
-    void Start()
+    public float bigG { get; } = 100f;
+    void Start() 
     {
         rb = this.GetComponent<Rigidbody>();
-        bigG = 100f;
+        
 
     }
     void Update()

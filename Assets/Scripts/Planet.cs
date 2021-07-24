@@ -28,6 +28,8 @@ public class Planet : MonoBehaviour
 
     private void Start()
     {
+        this.gameObject.tag = "Findable";
+        this.gameObject.name = "Planet";
         GeneratePlanet();
     }
     public void AdjustPos(Vector3 pos)
