@@ -16,7 +16,7 @@ public class CameraMovement : MonoBehaviour
     
     public float curX = 1.0f;
     public float curY = 1.0f;
-
+    Quaternion rotation;
     private void Start()
     {
         camerachange = transform;
@@ -31,7 +31,7 @@ public class CameraMovement : MonoBehaviour
     private void LateUpdate()
     {
         Vector3 dir = new Vector3(0, 0, -distance);
-        Quaternion rotation = Quaternion.Euler(curY, curX, 0);
+        rotation = Quaternion.Euler(curY, curX, 0);
 
         camerachange.position = objecto.position + rotation * dir;
         camerachange.LookAt(objecto.position);
@@ -39,5 +39,10 @@ public class CameraMovement : MonoBehaviour
         lightchange.position = objecto.position + rotation * dir*.5f;
         lightchange.LookAt(objecto.position);
 
+    }
+
+    public Quaternion GetRotation()
+    {
+        return rotation;
     }
 }

@@ -4,8 +4,7 @@ using UnityEngine;
 
 public class SolarSystem : MonoBehaviour
 {
-    //canvas
-    public Canvas myUi;
+   
 
 
     public GameObject mainBody;

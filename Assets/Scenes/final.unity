@@ -166,8 +166,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a26869af8f15f664095a38c867c3071b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myUi: {fileID: 0}
-  mainBody: {fileID: 7112302390613476809, guid: 39b3c54d64824a9429e38d094fa7a084, type: 3}
+  mainBody: {fileID: 5560948004378967266, guid: a5723150f66849040bc6eb6530c925be, type: 3}
   lighting: {fileID: 8069098954031274180, guid: 01c9d536024784a4a8b8ff4b3ba10345, type: 3}
   mainCamera: {fileID: 6015571218042969226, guid: e529de91389aa764cb72b7fdc2d4c69c, type: 3}
   colors: {fileID: 11400000, guid: 7881c3d9db7299c4c8b78697dc7b7a20, type: 2}
