@@ -15,9 +15,9 @@ MonoBehaviour:
   radius: 2
   noiseSettings:
     enable: 1
-    strength: 0
-    rough: 0
-    minValue: 1
-    center: {x: 0, y: 0, z: 0}
-    numLayers: 1
-    persistance: 0
+    strength: 0.5
+    rough: 1
+    minValue: 1.32
+    center: {x: 2.19, y: 2.25, z: 2.85}
+    numLayers: 3
+    persistance: 2

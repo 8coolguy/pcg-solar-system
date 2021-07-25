@@ -126,22 +126,28 @@ MonoBehaviour:
   - name: Ocean
     height: 0.3
     color: {r: 0, g: 0.88816905, b: 1, a: 0}
+  - name: plane
+    height: 0.5
+    color: {r: 0, g: 0.35686275, b: 0.007837564, a: 0}
   - name: Mountain
     height: 0.7
     color: {r: 0.3584906, g: 0.261178, b: 0, a: 0}
+  - name: Mountain
+    height: 0.8
+    color: {r: 1, g: 1, b: 1, a: 0}
   tileRender: {fileID: 1003436322532170013}
   tileFilter: {fileID: 1003436322532170012}
   tileCollider: {fileID: 1003436322532170014}
   noise: {fileID: 1003436322532170000}
-  heightMultiplayer: 2
+  heightMultiplayer: 2.5
   heightCurve:
     serializedVersion: 2
     m_Curve:
     - serializedVersion: 3
       time: 0
       value: 0
-      inSlope: 2
-      outSlope: 2
+      inSlope: 0
+      outSlope: 0
       tangentMode: 0
       weightedMode: 0
       inWeight: 0
@@ -149,8 +155,8 @@ MonoBehaviour:
     - serializedVersion: 3
       time: 1
       value: 1
-      inSlope: 0
-      outSlope: 0
+      inSlope: 2
+      outSlope: 2
       tangentMode: 0
       weightedMode: 0
       inWeight: 0
@@ -162,4 +168,4 @@ MonoBehaviour:
   - seed: 234234
     amplitude: 3
     frequency: 1
-  mapScale: 1
+  mapScale: 4

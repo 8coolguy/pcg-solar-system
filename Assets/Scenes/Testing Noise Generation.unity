@@ -328,8 +328,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eeb04ecbc70600040b1484ce2bb4816a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tilenumHeight: 5
-  tilenumWidth: 5
+  tilenumHeight: 10
+  tilenumWidth: 10
   replicatedPlane: {fileID: 1003436322532170015, guid: 693ab1c541b89fa4c91e504b978f0b0a, type: 3}
 --- !u!4 &1678000169
 Transform:

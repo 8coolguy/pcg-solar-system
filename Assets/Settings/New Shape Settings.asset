@@ -17,7 +17,7 @@ MonoBehaviour:
     enable: 1
     strength: 1
     rough: 2
-    minValue: 1
+    minValue: 7
     center: {x: 0, y: 0, z: 0}
     numLayers: 8
     persistance: 1

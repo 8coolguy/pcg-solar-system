@@ -12,6 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1df0591f3f7dcf241b255b4c52e90ac9, type: 3}
   m_Name: Basic 1
   m_EditorClassIdentifier: 
-  enable: 0
-  colorBase: {r: 0, g: 0, b: 0, a: 0}
-  heights: []
+  enable: 1
+  colorBase: {r: 1, g: 1, b: 1, a: 0}
+  heights:
+  - height: 0.5
+    color: {r: 0, g: 0.5764706, b: 0.34860915, a: 0}
+  - height: 0.58
+    color: {r: 0.3679245, g: 0.3218161, b: 0.17528479, a: 0}
+  - height: 0.9
+    color: {r: 0.84213686, g: 0.9245283, b: 0.8242257, a: 0}
