@@ -52,4 +52,12 @@ Star
 ## Conclusion   
 This project was a whole lot of fun I got to leanrn a whole lot about unity and c#. The noise functions and mesh generation is also very valuable in other visual based project like this. Hopefully, I will comback to this and add a whole lot more to this to make it even spicier and visualy appealing. This was created on Unity 20.2, so if any one would like to take a a gander you are welcome. Maybe you can figure out what went wrong with my marching cubes algorithm. I am trying to put a final version online, but here is also a cool gif.   
 ![pcg-gif](https://github.com/8coolguy/pcg-solar-system/blob/master/Images/pcg-gif.gif)    
-ps: You can run it only if you clone the pcg folder, run a server with it, and open the webpage in it.
+ps: You can run it only if you clone the pcg folder, run a server with it, and open the webpage in it.   
+## Resources:   
+Marching Cubes:    
+http://paulbourke.net/geometry/polygonise/   
+https://people.eecs.berkeley.edu/~jrs/meshpapers/LorensenCline.pdf   
+https://www.youtube.com/watch?v=QN39W020LqU&list=PLFt_AvWsXl0cONs3T0By4puYy6GM22ko8   
+https://gamedevacademy.org/complete-guide-to-procedural-level-generation-in-unity-part-1/
+
+
