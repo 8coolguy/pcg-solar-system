@@ -31,6 +31,8 @@ public class SolarSystem : MonoBehaviour
     
     public void Start()
     {
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.Locked;
         //mainbody, cam, and lights
         main = Instantiate(mainBody, new Vector3(Random.Range(-500, -100), Random.Range(-500, -100), Random.Range(-500, -100)), Quaternion.identity);
         lights = Instantiate(lighting);
