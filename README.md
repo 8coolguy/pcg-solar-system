@@ -46,7 +46,7 @@ turqouish ocean planet
 After the planet, I rushed to finsish the other parts. I created some quick ui elements. I created a script to give the planets a initial velocity that would lead to an orbit. This script had varying results because sometimes it did work, but it usually didn't. The reason it doesn't work is becuase there are other planets with mass that led to weird pushes and pulls between the project. I created a final rocket that had some cool effects. The final project would generate a solar system with a varying amount of planets that 
 you can look around in with the rocket. The background would be starlight and you can travel to other newly generated solar systems by traveling away from the center of the solar system. The solar system would also generate a star at the center. Unfortunatley, I wasn't able to get the statr to glwo enough. I was able to reuse some code from a previous project for the camera and lighting.    
 ![solarsystem](https://github.com/8coolguy/pcg-solar-system/blob/master/Images/solarsystem.png)   
-Star
+Star   
 ![star](https://github.com/8coolguy/pcg-solar-system/blob/master/Images/star.png)   
 
 ## Conclusion   
