@@ -2,7 +2,7 @@
 Just makin spheres into planets and stars.
 
 
-# Proceduraly Generation Solar System Project   
+# Procedural Generation Solar System Project   
 Hello.    
 This is was my attempt at creating a proceduraly generated solarsystem. I was heavily inspired by Sebastian Lague's youtube series "Coding Adeventures"  where he worked through different parts of his procedually generated solar system to a different complexity. I have little to no experience creating sohpisticated projects on unity, so the learning curve was a bit difficult.
 I also used a bit of Blender to create a rocket asset which was very difficult and turned out less than optimal because I have no idea how to use Blender. This project was fun to work throught and there are sections that I'll comeback to spice up to make it actually work as intended.   
