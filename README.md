@@ -35,7 +35,7 @@ There should be many papers linked below better explaining this algorithm. Basic
 ### New Noise Function
 After many tries of finding a way to use Perlin Noise, I gave up on that and used a Noise script from a tutorial that would be able to deliver on what I was looking for. I was able to use this noise script and implemented some a shape and color settings to make it more cuztomizable. Examples of some planets I created are below. Some of the variables I had for the noise generation was strength and roughness. Persistance was used to show how much the noise amplified per layer.
 ![planet](https://github.com/8coolguy/pcg-solar-system/blob/master/Images/planet.png)      
-somewhat earth like
+somewhat earth like    
 ![planet1](https://github.com/8coolguy/pcg-solar-system/blob/master/Images/planet1.png)         
 magma planet
 ![planet2](https://github.com/8coolguy/pcg-solar-system/blob/master/Images/planet2.png)       
