@@ -33,19 +33,22 @@ There should be many papers linked below better explaining this algorithm. Basic
 ![marching](https://github.com/8coolguy/pcg-solar-system/blob/master/Images/marching.png)
 
 ### New Noise Function
-After many tries of finding a way to use Perlin Noise, I gave up on that and used a Noise script from a tutorial that would be able to deliver on what I was looking for. I was able to use this noise script and implemented some a shape and color settings to make it more cuztomizable. Examples of some planets I created are below. 
-![planet](https://github.com/8coolguy/pcg-solar-system/blob/master/Images/planet.png)   
+After many tries of finding a way to use Perlin Noise, I gave up on that and used a Noise script from a tutorial that would be able to deliver on what I was looking for. I was able to use this noise script and implemented some a shape and color settings to make it more cuztomizable. Examples of some planets I created are below. Some of the variables I had for the noise generation was strength and roughness. Persistance was used to show how much the noise amplified per layer.
+![planet](https://github.com/8coolguy/pcg-solar-system/blob/master/Images/planet.png)      
 somewhat earth like
-![planet1](https://github.com/8coolguy/pcg-solar-system/blob/master/Images/planet1.png)      
+![planet1](https://github.com/8coolguy/pcg-solar-system/blob/master/Images/planet1.png)         
 magma planet
-![planet2](https://github.com/8coolguy/pcg-solar-system/blob/master/Images/planet2.png)    
+![planet2](https://github.com/8coolguy/pcg-solar-system/blob/master/Images/planet2.png)       
 turqouish ocean planet
-![planet3](https://github.com/8coolguy/pcg-solar-system/blob/master/Images/planet3.png)
+![planet3](https://github.com/8coolguy/pcg-solar-system/blob/master/Images/planet3.png)   
 
 ## Finishing up
 After the planet, I rushed to finsish the other parts. I created some quick ui elements. I created a script to give the planets a initial velocity that would lead to an orbit. This script had varying results because sometimes it did work, but it usually didn't. The reason it doesn't work is becuase there are other planets with mass that led to weird pushes and pulls between the project. I created a final rocket that had some cool effects. The final project would generate a solar system with a varying amount of planets that 
-you can look around in with the rocket. The background would be starlight and you can travel to other newly generated solar systems by traveling away from the center of the solar system.    
-![solarsystem](https://github.com/8coolguy/pcg-solar-system/blob/master/Images/solarsystem)
+you can look around in with the rocket. The background would be starlight and you can travel to other newly generated solar systems by traveling away from the center of the solar system. The solar system would also generate a star at the center. Unfortunatley, I wasn't able to get the statr to glwo enough. I was able to reuse some code from a previous project for the camera and lighting.    
+![solarsystem](https://github.com/8coolguy/pcg-solar-system/blob/master/Images/solarsystem.png)   
+Star
+![star](https://github.com/8coolguy/pcg-solar-system/blob/master/Images/star.png)   
 
 ## Conclusion   
-This project was a whole lot of fun I got to leanrn a whole lot about unity and c#. The noise functions and mesh generation is also very valuable in other visual based project like this. Hopefully, I will comback to this and add a whole lot more to this to make it even spicier and visualy appealing. This was created on Unity 20.2, so if any one would like to take a a gander you are welcome. Maybe you can figure out what went wrong with my marching cubes algorithm. 
+This project was a whole lot of fun I got to leanrn a whole lot about unity and c#. The noise functions and mesh generation is also very valuable in other visual based project like this. Hopefully, I will comback to this and add a whole lot more to this to make it even spicier and visualy appealing. This was created on Unity 20.2, so if any one would like to take a a gander you are welcome. Maybe you can figure out what went wrong with my marching cubes algorithm. I am trying to put a final version online, but here is also a cool gif.   
+![pcg-gif](https://github.com/8coolguy/pcg-solar-system/blob/master/Images/pcg-gif.gif)
